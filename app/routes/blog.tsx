@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-<div className = "bg-[#F8ECDC] h-screen w-full flex flex-col fixed top-0">
+<div className = "bg-[#F8ECDC] w-full flex flex-col top-0">
   <div className = "items-center justify-center">
     
   </div>

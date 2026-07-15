@@ -27,11 +27,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function Root() {
   return (
-    <>
+    <div className="relative w-full">
       <Navbar />
-      <main className="relative z-10 pt-20">
+      <main className="relative z-10">
         <Outlet />
       </main>
-    </>
+    </div>
   )
 }

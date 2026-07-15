@@ -4,9 +4,9 @@ import { Link, NavLink } from "react-router";
 
 export default function Nav() {
   return (
-    <nav className="fixed top-0 w-full bg-transparent z-50 px-8 py-4">
+    <nav className="absolute top-0 left-0 w-full bg-transparent z-50 px-8 py-4">
       <div className="flex items-center justify-end max-w-6xl mx-auto text-2xl">
-        <div className="flex gap-24">
+        <div className="flex gap-10">
 
           <NavLink
             to="/projects"
