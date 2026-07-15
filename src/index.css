@@ -1,1 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Kapakana:wght@300..400&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-jersey: 'Jersey 10', sans-serif;
+  --font-kapakana: 'Kapakana', cursive;
+  --font-newsreader: 'Newsreader', serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+}
