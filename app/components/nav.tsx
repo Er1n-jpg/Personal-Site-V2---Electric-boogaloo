@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router";
 
 export default function Nav() {
   return (
-    <nav className="fixed top-0 w-full bg-[#1B1E25] z-50 px-8 py-4">
+    <nav className="fixed top-0 w-full bg-transparent z-50 px-8 py-4">
       <div className="flex items-center justify-end max-w-6xl mx-auto text-2xl">
         <div className="flex gap-24">
           
@@ -21,12 +21,12 @@ export default function Nav() {
           <NavLink
             to="/design"
             className={({ isActive }) =>
-              `text-white font-bold hover:text-[#FF6363] transition-colors font-roboto ${
+              `text-[#] font-bold hover:text-[#FF6363] transition-colors font-roboto ${
                 isActive ? "text-[#FF6363]" : ""
               }`
             }
           >
-            Design
+            About
           </NavLink>
 
           <NavLink 
@@ -37,7 +37,7 @@ export default function Nav() {
               }`
           }
           >
-            Art
+            Projects
           </NavLink>
         </div>
       </div>

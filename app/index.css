@@ -6,11 +6,3 @@
   --font-kapakana: 'Kapakana', cursive;
   --font-newsreader: 'Newsreader', serif;
 }
-
-@layer base {
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-  }
-}
