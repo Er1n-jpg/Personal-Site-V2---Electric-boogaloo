@@ -6,4 +6,3 @@ export default [
     route("about","routes/about.tsx"),
     route("projects", "routes/projects.tsx")
 ] satisfies RouteConfig;
-

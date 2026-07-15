@@ -7,38 +7,52 @@ export default function Nav() {
     <nav className="fixed top-0 w-full bg-transparent z-50 px-8 py-4">
       <div className="flex items-center justify-end max-w-6xl mx-auto text-2xl">
         <div className="flex gap-24">
-          
+
           <NavLink
-            to="/"
+            to="/projects"
             className={({ isActive }) =>
-              `text-white font-bold hover:text-[#FF6363] transition-colors font-roboto ${
-                isActive ? "text-[#FF6363]" : ""
+              `text-[#304076] hover:text-[#9DAFE9] transition-colors font-jersey ${
+                isActive ? "text-[#9DAFE9]" : ""
               }`
             }
           >
-            Home
+            Projects
           </NavLink>
-          <NavLink
-            to="/design"
-            className={({ isActive }) =>
-              `text-[#] font-bold hover:text-[#FF6363] transition-colors font-roboto ${
-                isActive ? "text-[#FF6363]" : ""
+
+          <NavLink 
+            to="/about"
+            className ={({ isActive }) =>
+              `text-[#304076] font-jersey hover:text-[#9DAFE9] transition-colors ${
+                isActive ? "text-[#9DAFE9]" : ""
               }`
-            }
+          }
           >
             About
           </NavLink>
 
-          <NavLink 
-            to="/art"
+        <NavLink 
+            to="/blog"
             className ={({ isActive }) =>
-              `text-white font-roboto font-bold hover:text-[#FF6363] transition-colors ${
-                isActive ? "text-[#FF6363]" : ""
+              `text-[#304076] font-jersey hover:text-[#9DAFE9] transition-colors ${
+                isActive ? "text-[#9DAFE9]" : ""
               }`
           }
           >
-            Projects
+            Blog
           </NavLink>
+
+                    
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `text-[#304076] transition-colors font-jersey ${
+                isActive ? "text-[#9DAFE9]" : ""
+              }`
+            }
+          >
+            !!!
+          </NavLink>
+
         </div>
       </div>
     </nav>
