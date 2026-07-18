@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <div className="relative w-full">
+    <div className="relative w-full ">
       <div className="bg-[#F8ECDC] flex flex-col top-0 w-full">
         <div className="w-full h-190 bg-cover bg-center flex flex-col" style={{ backgroundImage: "url('/soobin.png')" }}>
           <div className="flex flex-col w-full mt-30 ">
@@ -51,15 +51,43 @@ function App() {
       </div>
 
       
-      <div className = "w-full flex flex-row items-center justify-between h-100">
-      <div className = "w-100">
-        <h1 className = "font-kapakana text-[13rem]">Yoohoo</h1>
-        <p className = "font-newsreader">Welcome to my little corner of the internet! (that hasn’t been claimed since im too poor to buy a domain)</p>
+      <div className = "w-full flex flex-row items-center justify-between h-100 ">
+      <div className = "w-120 ml-40 text-[#304076]">
+        <h1 className = "font-kapakana text-[13rem] -mb-20 ml-5">Yoohoo</h1>
+          <div className = "font-newsreader text-2xl">
+            <p>Welcome to my little corner of the internet! (that hasn’t been claimed since im too poor to buy a domain)</p>
+            <p className = "mt-2">I’m Erin a 16 year old student from Ottawa, Ontario</p>
+            <p className = "mt-2">If i’m not sleeping I like to make projects, do art, build robots and play instruments</p>
+          </div>
       </div>
+
+        <div className = "w-150 h-150 mr-30 flex items-center justify-center ">
+          <a href="/about">
+            <img src="intro.png" className="mt-30 transition-transform duration-300 hover:scale-110"/>
+          </a>
+        </div>
+      </div>
+      <div className="flex items-center justify-center w-full mt-50 text-[#304076]">
+        <h1 className="font-kapakana text-8xl">take a look at...</h1>
+      </div>
+      <div className = "flex items-center justify-between w-full mt-5 mb-20">
+
+        <a href = "/blog" className = "flex flex-col justify-center items-center ml-50 text-[#304076] transition-transform duration-300 hover:scale-105">
+          <img src = "/chiiiken.png" className = "w-120 h-90"></img>
+          <h1 className = "font-kapakana text-8xl">(B)logs</h1>
+          <p className = "font-newsreader text-2xl">My amazing writing skills</p>
+        </a>
+
+
       
-      </div>
+        <a href = "/projects" className = "flex flex-col justify-center items-center mr-50 text-[#304076] transition-transform duration-300 hover:scale-105">
+          <img src = "/chiiiken.png" className = "w-120 h-90"></img>
+          <h1 className = "font-kapakana text-8xl">Projects</h1>
+          <p className = "font-newsreader text-2xl">My creations :)</p>
+        </a>
       </div>
     </div>
+  </div>
     </>
   )
 }
