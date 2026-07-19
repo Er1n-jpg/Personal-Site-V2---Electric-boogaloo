@@ -65,8 +65,17 @@ function App() {
 
     <div className = "flex flex-col mt-10">
       <div className = "flex flex-row gap-2 w-max h-45 animate-scroll-left">
+       <div className = "relative group h-45 overflow-hidden">
         <img src = "/orv.png" className = "h-45 "/>
+        <div className = "text-center flex flex-col absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200">
+          <p className = "text-6xl text-[#f8ECDC] font-jersey"></p>
+        </div>
+        </div>
+
+        <div className = "relative group h-45 overflow-hidden">
         <img src = "/svt.png" className = "h-45"/>
+        <div className = ""></div>
+        </div> 
         <img src = "/tbhk.png" className = "h-45"/>
         <img src = "/alnst.png" className = "h-45"/>
         <img src = "/orv.png" className = "h-45"/>
@@ -78,29 +87,65 @@ function App() {
       <div className = "flex flex-row gap-2 mt-2 animate-scroll-right w-max">
       <div className = "relative group h-45 overflow-hidden">
         <img src = "/aldi.png" className = "h-45"/>
-        <div className = "text-center absolute bg-black/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
-          <p className = " text-white font-jersey text-2xl "> Alpha Drive One</p>
+        <div className = "text-center flex flex-col absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+          <p className = " text-[#F8ECDC] font-jersey text-6xl "> Alpha Drive One</p>
         </div>
       </div>
 
       <div className = "relative group h-45 overflow-hidden">
         <img src = "/prsk.png" className = "h-45"/>
-        <div className = "text-center absolute bg-black/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
-        <p className = "text-white font-jersey text-2xl ">Al</p>
+        <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = "text-[#F8ECDC] font-jersey text-6xl ">Project Sekai</p>
         </div>
       </div>
-        <img src = "/zb1.png" className = "h-45"/>
-        <img src = "/bluelock.png" className = "h-45"/>
 
-        <img src = "/aldi.png" className = "h-45 "/>
-        <img src = "/prsk.png" className = "h-45"/>
+      <div className = "relative group h-45 overflow-hidden">
         <img src = "/zb1.png" className = "h-45"/>
+        <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = "text-[#F8ECDC] font-jersey text-6xl">Zerobaseone </p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
         <img src = "/bluelock.png" className = "h-45"/>
+      <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+      <p className = "font-jersey text-[#F8ECDC] text-6xl">Blue Lock</p>
+      </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
+        <img src = "/aldi.png" className = "h-45 "/>
+        <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = " font-jersey text-[#F8ECDC] text-5xl">Alpha Drive One</p>
+        </div>
+        </div>
+
+      
+      <div className = "relative group h-45 overflow-hidden">
+        <img src = "/prsk.png" className = "h-45"/>
+        <div className = "flex flex-col text-center absolute bg-black/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = "text-[#F8ECDC] font-jersey text-5xl ">Project Sekai</p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
+        <img src = "/zb1.png" className = "h-45"/>
+        <div className = "flex flex-col text-center absolute bg-black/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = "text-[#F8ECDC] font-jersey text-5xl">Zerobaseone </p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
+        <img src = "/bluelock.png" className = "h-45"/>
+      <div className = "flex flex-col text-center absolute bg-black/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+      <p className = "font-jersey text-[#F8ECDC] text-5xl">Blue Lock</p>
+      </div>
+      </div>
+
 
       </div>
 
     </div>
-
 
 
 
