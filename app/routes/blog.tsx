@@ -4,25 +4,25 @@ const blogPost = [
   {
     title: "A hackathon in china changed my life",
     description: "Fallout 26",
-    url: "",
+    url: "./unavailable",
     index: "1"
   },
   {
     title: "AI is stripping the humanity out of things idk",
     description: "life is too damn convienient now",
-    url: "",
+    url: "./unavailable",
     index: "2"
   },
   {
     title: "Sasaengs are weird",
     description: "I yap about weird fan behaviour in kpop communities",
-    url: "",
+    url: "./unavailablee.tsx",
     index: "3"
   },
   {
     title: "My school's larping pandemic",
     description: "larp larp larp larp",
-    url: "",
+    url: "./unavailable.tsx",
     index: "4"
   }
 ]
@@ -35,9 +35,9 @@ function DisplayItem({title, description, url, index}: {
 }) {
   return(
     <a href={url}>
-<div className="bg-[#304076] rounded-2xl flex flex-col text-left items-start justify-start p-6 h-90 overflow-hidden w-160">
+<div className="bg-[#304076] rounded-2xl flex flex-col text-left items-start justify-start p-6 h-90 overflow-hidden w-160 pt-10 hover:scale-105 duration-300">
   <p className="font-newsreader text-6xl text-[#F8ECDC] break-words">{title}</p>
-  <p className="font-newsreader text-base text-[#F8ECDC] mt-2">{description}</p>
+  <p className="font-newsreader text-2xl text-white mt-2">{description}</p>
 </div>
     </a>
   );
@@ -66,7 +66,7 @@ function App() {
       </div>
     </div>
 
-<div className="grid grid-cols-2 gap-6 mt-20 mx-auto">
+<div className="grid grid-cols-2 gap-6 mt-20 mx-auto mb-30">
   {blogPost.map((item) => (
     <DisplayItem
       key={item.index}
