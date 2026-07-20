@@ -65,26 +65,67 @@ function App() {
 
     <div className = "flex flex-col mt-10">
       <div className = "flex flex-row gap-2 w-max h-45 animate-scroll-left">
-       <div className = "relative group h-45 overflow-hidden">
-        <img src = "/orv.png" className = "h-45 "/>
-        <div className = "text-center flex flex-col absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200">
-          <p className = "text-6xl text-[#f8ECDC] font-jersey"></p>
-        </div>
-        </div>
-
-        <div className = "relative group h-45 overflow-hidden">
-        <img src = "/svt.png" className = "h-45"/>
-        <div className = ""></div>
-        </div> 
-        <img src = "/tbhk.png" className = "h-45"/>
-        <img src = "/alnst.png" className = "h-45"/>
+      
+      <div className = "relative group h-45 overflow-hidden">
         <img src = "/orv.png" className = "h-45"/>
+        <div className = "text-center flex flex-col absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+          <p className = " text-[#F8ECDC] font-jersey text-6xl ">Omniscent Reader's Viewpoint</p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
         <img src = "/svt.png" className = "h-45"/>
+        <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = "text-[#F8ECDC] font-jersey text-6xl ">Seventeen</p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
         <img src = "/tbhk.png" className = "h-45"/>
+        <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = "text-[#F8ECDC] font-jersey text-6xl"> Toilet Bound Hanako Kun </p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
         <img src = "/alnst.png" className = "h-45"/>
+      <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+      <p className = "font-jersey text-[#F8ECDC] text-6xl">Alien Stage</p>
+      </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
+        <img src = "/orv.png" className = "h-45"/>
+        <div className = "text-center flex flex-col absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+          <p className = " text-[#F8ECDC] font-jersey text-6xl ">Omniscent Reader's Viewpoint</p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
+        <img src = "/svt.png" className = "h-45"/>
+        <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = "text-[#F8ECDC] font-jersey text-6xl ">Seventeen</p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
+        <img src = "/tbhk.png" className = "h-45"/>
+        <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+        <p className = "text-[#F8ECDC] font-jersey text-6xl"> Toilet Bound Hanako Kun </p>
+        </div>
+      </div>
+
+      <div className = "relative group h-45 overflow-hidden">
+        <img src = "/alnst.png" className = "h-45"/>
+      <div className = "flex flex-col text-center absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
+      <p className = "font-jersey text-[#F8ECDC] text-6xl">Alien Stage</p>
+      </div>
+      </div>
+      
       </div>
 
       <div className = "flex flex-row gap-2 mt-2 animate-scroll-right w-max">
+
       <div className = "relative group h-45 overflow-hidden">
         <img src = "/aldi.png" className = "h-45"/>
         <div className = "text-center flex flex-col absolute bg-[#304076]/60 opacity-0 group-hover:opacity-100 justify-end transition-opacity duration-200 inset-0">
@@ -145,9 +186,10 @@ function App() {
 
       </div>
 
+      <div className = "flex text-left w-130 font-newsreader text-xl ml-20 mt-5 text-[#304076] mb-20">
+        <p>If we have any similar interests, please HMU! I’m super down to yap about this stuff</p>
+      </div>
     </div>
-
-
 
 
 </div>
