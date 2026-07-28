@@ -14,8 +14,8 @@ const blogPost = [
     index: "2"
   },
   {
-    title: "Sasaengs are weird",
-    description: "I yap about weird fan behaviour in kpop communities",
+    title: "what is the secret to live",
+    description: "uhhh I got no clue about this one",
     url: "./unavailablee.tsx",
     index: "3"
   },

@@ -15,10 +15,12 @@ function App() {
     </div>
 
     <div className = "flex flex-row justify-between ml-10 mr-10 pt-10 text-[#304076]"> 
+      <div>
       <p className = "font-newsreader text-3xl mt-10">
         ooooh I have a life?
       </p>
       <img src = "/lineee1.png" className = "w-90 h-0.5 mt-14 -ml-90"/>
+      </div>
       <p className = "font-kapakana text-9xl">
         Stuff I Do
       </p>
@@ -51,7 +53,7 @@ function App() {
 
     </div>
     
-    <img src = "/polaroidlove.png" className = "w-100 h-120 mr-40 mt-20"/>
+    <img src = "/polaroidlove.png" className = "w-120 h-160 mr-25 mt-20"/>
 
 
 

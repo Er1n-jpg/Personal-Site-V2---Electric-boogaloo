@@ -73,7 +73,7 @@ function App() {
       <div className = "flex items-center justify-between w-full mt-5 mb-20">
 
         <a href = "/blog" className = "flex flex-col justify-center items-center ml-50 text-[#304076] transition-transform duration-300 hover:scale-105">
-          <img src = "/chiiiken.png" className = "w-120 h-90"></img>
+          <img src = "/boog.png" className = "w-120 h-90"></img>
           <h1 className = "font-kapakana text-8xl">(B)logs</h1>
           <p className = "font-newsreader text-2xl">My amazing writing skills</p>
         </a>
@@ -81,10 +81,14 @@ function App() {
 
       
         <a href = "/projects" className = "flex flex-col justify-center items-center mr-50 text-[#304076] transition-transform duration-300 hover:scale-105">
-          <img src = "/chiiiken.png" className = "w-120 h-90"></img>
+          <img src = "/proj.png" className = "w-120 h-90"></img>
           <h1 className = "font-kapakana text-8xl">Projects</h1>
           <p className = "font-newsreader text-2xl">My creations :)</p>
         </a>
+      </div>
+
+      <div className = "flex text-center justify-center font-newsreader text-[#304076] mb-10 text-xl">
+        <p>Made with ♡ by yours truly</p>
       </div>
     </div>
   </div>
