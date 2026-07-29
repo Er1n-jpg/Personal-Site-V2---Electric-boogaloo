@@ -1,3 +1,4 @@
+import { index } from '@react-router/dev/routes';
 import { useState } from 'react'
 
 const projArray = [
@@ -5,16 +6,16 @@ const projArray = [
     title: "ALD1FLIX",
     description: "A Kpop database for the KPOP group Alpha Drive One containg information on the group, members, discography and content ",
     ghurl: "https://github.com/Er1n-jpg/Ald1flix",
-    demourl:"https://ald1flix.vercel.app/",
-    Date: 2026/0o6/10,
-    img:"",
-    index:"1",
-  },{
+    demourl: "https://ald1flix.vercel.app/",
+    Date: 2026 / 0o6 / 10,
+    img: "",
+    index: "1",
+  }, {
     title: "Alien Stage Clicker Game",
     description: "My very first godot game! It's a clicker game made based on the animated series alien stage, you gain currency by clicking and can spend it on accessories at the shop! All the art is drawn by me!",
-    ghurl:"https://github.com/Er1n-jpg/Alnst-clicker-game",
+    ghurl: "https://github.com/Er1n-jpg/Alnst-clicker-game",
     demourl: "https://koiyomon.itch.io/click-that-ivan",
-    Date: 2025/12/30,
+    Date: 2025 / 12 / 30,
     img: "",
     index: "2",
   }, {
@@ -22,7 +23,7 @@ const projArray = [
     description: "A Database of past tests where people can view and upload them, gamei-fying it for people with ADHD to make it simmilar to youtube with features like merge games, pomodoro timers, a mini subway surfers sreen and line following by mouse",
     ghurl: "https://github.com/sophiayduan/mushroot",
     demourl: "https://github.com/sophiayduan/mushroot",
-    Date: 2026/0o5/15,
+    Date: 2026 / 0o5 / 15,
     img: "",
     index: "3",
   }, {
@@ -30,7 +31,7 @@ const projArray = [
     description: "An OpenCV application which detects if your eyes are open or closed, if they're closed for too long it sends an email to your teacher through the javamail API",
     ghurl: "",
     demourl: "",
-    Date: 2026/0o2/18,
+    Date: 2026 / 0o2 / 18,
     img: "",
     index: "4",
   }, {
@@ -38,7 +39,7 @@ const projArray = [
     description: "Top 5 project at a hackathon called campfire flagship, you play as a shrimp fighting off evil vegetables to pay off your debt, the game is a combination between a visual novel and combat game. INDENDED TO BE PLAYED WITH A CUSTOM CONTROLLER!!",
     ghurl: "https://github.com/gbtsui/shrimp-fried-rice",
     demourl: "",
-    Date: 2026/0o2/22,
+    Date: 2026 / 0o2 / 22,
     img: "",
     index: "5"
   }, {
@@ -46,34 +47,34 @@ const projArray = [
     description: "A remake of my old personal website, using proper figma conventions, react and tailwind css",
     ghurl: "https://github.com/Er1n-jpg/Personal-website",
     demourl: "https://koiyomon.vercel.app",
-    date: 2026/0o7/20,
+    date: 2026 / 0o7 / 20,
     img: "",
     index: "6"
   }
 ]
 
-function ProjectItem({title, description, ghurl, demourl, Date, img, index}: {
+function ProjectItem({ title, description, ghurl, demourl, date, img, index }: {
   title: string,
   description: string,
   ghurl: string,
   demourl: string,
-  Date: Date,
+  date?: string | number | Date,
   img: string,
   index: string
 }) {
   return (
-    <div className="relative bg-[#304076] w-180 flex flex-row h-80 items-center justify-center">
+    <div className="relative bg-[#304076] w-300 flex flex-row h-80 items-center justify-center">
       <a href={demourl} className="absolute inset-0 z-0" aria-label={title}></a>
 
       <img src={img} className="rounded-lg h-70 relative z-10 pointer-events-none" />
 
-      <div className="flex text-left font-newsreader text-[#304076] relative z-10 justify-between">
-        <div className = "flex flex-col gap-2">
+      <div className="flex text-left font-newsreader text-[#F8ECDC] relative z-10 justify-between">
+        <div className="flex flex-col gap-2">
           <h1 className="text-3xl">{title}</h1>
-          <p className="text-2xl -mt-10">{description}</p>
+          <p className="text-2xl">{description}</p>
         </div>
         <a href={ghurl} className="relative z-20" onClick={(e) => e.stopPropagation()}>
-          <img className = "h-20 w-20" src = "./minigh"></img>
+          <img className="h-20 w-20" src="./minigh.png"></img>
         </a>
       </div>
     </div>
@@ -86,27 +87,37 @@ function App() {
 
   return (
     <>
-<div className="bg-[#F8ECDC] w-full flex flex-col top-0">
-  <div className = "items-center">
-    <div className = "flex flex-col justify-start text-left text-[#304076]">
-      <div className = "flex flex-row gap-6 mt-20 ml-10">
-      <p className = "font-kapakana text-[14rem] "> Projects</p>
-      <img src = "/projline.png" className = "h-0.5 w-80 mt-40"></img>
-      </div>
-      <div className = "w-100 -mt-30 ml-70">
-      <p className = "font-newsreader text-xl "> Disappointment or not, I love making (and breaking) things!</p>
-      </div>
+      <div className="bg-[#F8ECDC] w-full flex flex-col top-0">
+        <div className="items-center">
+          <div className="flex flex-col justify-start text-left text-[#304076]">
+            <div className="flex flex-row gap-6 mt-20 ml-10">
+              <p className="font-kapakana text-[14rem] "> Projects</p>
+              <img src="/projline.png" className="h-0.5 w-80 mt-40"></img>
+            </div>
+            <div className="w-100 -mt-30 ml-70">
+              <p className="font-newsreader text-xl "> Disappointment or not, I love making (and breaking) things!</p>
+            </div>
+            <div className="flex flex-col gap-6 mt-20 mb-30 items-start ml-30">
+              {projArray.map((item) => (
+                <ProjectItem
+                  key={item.index}
+                  title={item.title}
+                  description={item.description}
+                  ghurl={item.ghurl}
+                  demourl={item.demourl}
+                  date={item.Date ?? (item as any).date} 
+                  img={item.img} 
+                  index={item.index} />
+              ))}
+            </div>
 
-      <div className = "">
 
-      </div>
+            <div className="">
 
-      <div className = "">
-        
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
     </>
   )
 }
