@@ -8,7 +8,7 @@ const projArray = [
     ghurl: "https://github.com/Er1n-jpg/Ald1flix",
     demourl: "https://ald1flix.vercel.app/",
     Date: 2026 / 0o6 / 10,
-    img: "",
+    img: "./ald1flix.png",
     index: "1",
   }, {
     title: "Alien Stage Clicker Game",
@@ -16,7 +16,7 @@ const projArray = [
     ghurl: "https://github.com/Er1n-jpg/Alnst-clicker-game",
     demourl: "https://koiyomon.itch.io/click-that-ivan",
     Date: 2025 / 12 / 30,
-    img: "",
+    img: "./ivan.png",
     index: "2",
   }, {
     title: "Mush-Root",
@@ -32,7 +32,7 @@ const projArray = [
     ghurl: "",
     demourl: "",
     Date: 2026 / 0o2 / 18,
-    img: "",
+    img: "./btl.png",
     index: "4",
   }, {
     title: "Shrimp Fried Rice",
@@ -40,7 +40,7 @@ const projArray = [
     ghurl: "https://github.com/gbtsui/shrimp-fried-rice",
     demourl: "",
     Date: 2026 / 0o2 / 22,
-    img: "",
+    img: "./shrimpfriedrice.png",
     index: "5"
   }, {
     title: "This Website",
@@ -63,21 +63,22 @@ function ProjectItem({ title, description, ghurl, demourl, date, img, index }: {
   index: string
 }) {
   return (
-    <div className="relative bg-[#304076] w-300 flex flex-row h-80 items-center justify-center">
-      <a href={demourl} className="absolute inset-0 z-0" aria-label={title}></a>
+  <div className="relative bg-[#304076] w-340 flex flex-row h-80 items-center justify-center rounded-2xl hover:scale-102 duration-300">
+    <a href={demourl} className="absolute inset-0 z-0" aria-label={title}></a>
 
-      <img src={img} className="rounded-lg h-70 relative z-10 pointer-events-none" />
+  <img src={img} className="rounded-lg h-62 w-100 relative z-10 pointer-events-none mr-5" />
 
-      <div className="flex text-left font-newsreader text-[#F8ECDC] relative z-10 justify-between">
-        <div className="flex flex-col gap-2">
-          <h1 className="text-3xl">{title}</h1>
-          <p className="text-2xl">{description}</p>
-        </div>
-        <a href={ghurl} className="relative z-20" onClick={(e) => e.stopPropagation()}>
-          <img className="h-20 w-20" src="./minigh.png"></img>
-        </a>
-      </div>
+  <div className="flex text-left font-newsreader text-[#F8ECDC] relative z-10 justify-between gap-40 self-start pt-12">
+    <div className="flex flex-col gap-2 w-150 justify-start ">
+      <h1 className="text-6xl">{title}</h1>
+      <p className="text-lg">{description}</p>
     </div>
+    
+    <a href={ghurl} className="relative z-20 hover:scale-115 duration-300" onClick={(e) => e.stopPropagation()}>
+      <img className="h-20 w-20" src="./minigh.png" />
+    </a>
+  </div>
+</div>
   );
 }
 
@@ -97,7 +98,7 @@ function App() {
             <div className="w-100 -mt-30 ml-70">
               <p className="font-newsreader text-xl "> Disappointment or not, I love making (and breaking) things!</p>
             </div>
-            <div className="flex flex-col gap-6 mt-20 mb-30 items-start ml-30">
+            <div className="flex flex-col gap-6 mt-20 mb-30 items-start ml-20">
               {projArray.map((item) => (
                 <ProjectItem
                   key={item.index}
