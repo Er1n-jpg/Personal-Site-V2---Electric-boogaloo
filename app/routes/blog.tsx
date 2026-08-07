@@ -1,7 +1,18 @@
 import { useState } from 'react'
+    export type block =   | { type: "heading"; text: string; align?: "left" | "center" | "right" }
+    | { type: "text"; text: string; align?: "left" | "center" | "right" }
+    | { type: "image"; src: string; alt: string; className?: string }
+
+  export type BlogPost = {
+    slug = string;
+    title = string;
+    description = string;
+    blocks = blocks[];
+  }
 
 const blogPost = [
   {
+    slug = "hack"
     title: "A hackathon in china changed my life",
     description: "Fallout 26",
     url: "./unavailable",
@@ -36,13 +47,16 @@ function DisplayItem({title, description, url, index}: {
   return(
     <a href={url}>
 <div className="bg-[#304076] rounded-2xl flex flex-col text-left items-start justify-start p-6 h-90 overflow-hidden w-160 pt-10 hover:scale-105 duration-300">
-  <p className="font-newsreader text-6xl text-[#F8ECDC] break-words">{title}</p>
+  <p className="font-newsreader text-5xl text-[#F8ECDC] break-words">{title}</p>
   <p className="font-newsreader text-2xl text-white mt-2">{description}</p>
 </div>
     </a>
   );
 }
 
+export default function BlogPost({
+
+})
 
 function App() {
   const [count, setCount] = useState(0)

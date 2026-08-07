@@ -7,7 +7,7 @@ const projArray = [
     description: "A Kpop database for the KPOP group Alpha Drive One containg information on the group, members, discography and content ",
     ghurl: "https://github.com/Er1n-jpg/Ald1flix",
     demourl: "https://ald1flix.vercel.app/",
-    Date: 2026 / 0o6 / 10,
+    date: "2026-6-10",
     img: "./ald1flix.png",
     index: "1",
   }, {
@@ -15,7 +15,7 @@ const projArray = [
     description: "My very first godot game! It's a clicker game made based on the animated series alien stage, you gain currency by clicking and can spend it on accessories at the shop! All the art is drawn by me!",
     ghurl: "https://github.com/Er1n-jpg/Alnst-clicker-game",
     demourl: "https://koiyomon.itch.io/click-that-ivan",
-    Date: 2025 / 12 / 30,
+    date: "2025-12-30",
     img: "./ivan.png",
     index: "2",
   }, {
@@ -23,7 +23,7 @@ const projArray = [
     description: "A Database of past tests where people can view and upload them, gamei-fying it for people with ADHD to make it simmilar to youtube with features like merge games, pomodoro timers, a mini subway surfers sreen and line following by mouse",
     ghurl: "https://github.com/sophiayduan/mushroot",
     demourl: "https://github.com/sophiayduan/mushroot",
-    Date: 2026 / 0o5 / 15,
+    date: "2026-5-15",
     img: "",
     index: "3",
   }, {
@@ -31,7 +31,7 @@ const projArray = [
     description: "An OpenCV application which detects if your eyes are open or closed, if they're closed for too long it sends an email to your teacher through the javamail API",
     ghurl: "",
     demourl: "",
-    Date: 2026 / 0o2 / 18,
+    date: "2026-2-18",
     img: "./btl.png",
     index: "4",
   }, {
@@ -39,7 +39,7 @@ const projArray = [
     description: "Top 5 project at a hackathon called campfire flagship, you play as a shrimp fighting off evil vegetables to pay off your debt, the game is a combination between a visual novel and combat game. INDENDED TO BE PLAYED WITH A CUSTOM CONTROLLER!!",
     ghurl: "https://github.com/gbtsui/shrimp-fried-rice",
     demourl: "",
-    Date: 2026 / 0o2 / 22,
+    date: "2026-2-22",
     img: "./shrimpfriedrice.png",
     index: "5"
   }, {
@@ -47,38 +47,46 @@ const projArray = [
     description: "A remake of my old personal website, using proper figma conventions, react and tailwind css",
     ghurl: "https://github.com/Er1n-jpg/Personal-website",
     demourl: "https://koiyomon.vercel.app",
-    date: 2026 / 0o7 / 20,
-    img: "",
+    date: "2026-7-20",
+    img: "./soobin.png",
     index: "6"
   }
 ]
+
+function sortdate(arr: typeof projArray, order: "newest" | "oldest" = "newest") {
+  return [...arr].sort((a, b) => {
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return order === "newest" ? dateB - dateA : dateA - dateB;
+  })
+}
 
 function ProjectItem({ title, description, ghurl, demourl, date, img, index }: {
   title: string,
   description: string,
   ghurl: string,
   demourl: string,
-  date?: string | number | Date,
+  date: string,
   img: string,
   index: string
 }) {
   return (
-  <div className="relative bg-[#304076] w-340 flex flex-row h-80 items-center justify-center rounded-2xl hover:scale-102 duration-300">
-    <a href={demourl} className="absolute inset-0 z-0" aria-label={title}></a>
+    <div className="relative bg-[#304076] w-340 flex flex-row h-80 items-center justify-center rounded-2xl hover:scale-102 duration-300">
+      <a href={demourl} className="absolute inset-0 z-0" aria-label={title}></a>
 
-  <img src={img} className="rounded-lg h-62 w-100 relative z-10 pointer-events-none mr-5" />
+      <img src={img} className="rounded-lg h-62 w-100 relative z-10 pointer-events-none mr-5" />
 
-  <div className="flex text-left font-newsreader text-[#F8ECDC] relative z-10 justify-between gap-40 self-start pt-12">
-    <div className="flex flex-col gap-2 w-150 justify-start ">
-      <h1 className="text-6xl">{title}</h1>
-      <p className="text-lg">{description}</p>
+      <div className="flex text-left font-newsreader text-[#F8ECDC] relative z-10 justify-between gap-40 self-start pt-12">
+        <div className="flex flex-col gap-2 w-150 justify-start ">
+          <h1 className="text-6xl">{title}</h1>
+          <p className="text-lg">{description}</p>
+        </div>
+
+        <a href={ghurl} className="relative z-20 hover:scale-115 duration-300" onClick={(e) => e.stopPropagation()}>
+          <img className="h-20 w-20" src="./minigh.png" />
+        </a>
+      </div>
     </div>
-    
-    <a href={ghurl} className="relative z-20 hover:scale-115 duration-300" onClick={(e) => e.stopPropagation()}>
-      <img className="h-20 w-20" src="./minigh.png" />
-    </a>
-  </div>
-</div>
   );
 }
 
@@ -106,8 +114,8 @@ function App() {
                   description={item.description}
                   ghurl={item.ghurl}
                   demourl={item.demourl}
-                  date={item.Date ?? (item as any).date} 
-                  img={item.img} 
+                  date={item.date}
+                  img={item.img}
                   index={item.index} />
               ))}
             </div>
