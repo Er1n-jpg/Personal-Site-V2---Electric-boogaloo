@@ -3,16 +3,9 @@ import { useState } from 'react'
     | { type: "text"; text: string; align?: "left" | "center" | "right" }
     | { type: "image"; src: string; alt: string; className?: string }
 
-  export type BlogPost = {
-    slug = string;
-    title = string;
-    description = string;
-    blocks = blocks[];
-  }
 
 const blogPost = [
   {
-    slug = "hack"
     title: "A hackathon in china changed my life",
     description: "Fallout 26",
     url: "./unavailable",
@@ -54,9 +47,6 @@ function DisplayItem({title, description, url, index}: {
   );
 }
 
-export default function BlogPost({
-
-})
 
 function App() {
   const [count, setCount] = useState(0)
