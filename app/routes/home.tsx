@@ -6,29 +6,28 @@ function App() {
 
   return (
     <>
-    <div className="relative w-full ">
-      <div className="bg-[#F8ECDC] flex flex-col top-0 w-full">
+    <div className="relative w-full overflow-x-hidden">
+      <div className="bg-[#F8ECDC] flex flex-col top-0 w-full items-center justify-center">
         <div className="w-full h-190 bg-cover bg-center flex flex-col" style={{ backgroundImage: "url('/soobin.png')" }}>
           <div className="flex flex-col w-full mt-30 ">
             <div className="p-8 pb-0 justify-between flex">
               <div>
-                <h2 className="font-kapakana text-9xl text-[#304076] -mb-40 ml-70">Hi i'm</h2>
+                <h2 className="font-kapakana text-4xl sm:text-9xl lg:text-9xl -mb-10 lg:-mb-40 ml-4 lg:ml-70 text-[#304076] sm:-mb-25">Hi i'm</h2>
               </div>
 
               <div>
-                <img src="bluestars.png" className="z-10 w-50 h-50 -mb-100 mr-90"></img>
+                <img src="bluestars.png" className="z-10 w-50 h-50 -mb-100 lg:mr-90 sm:mr-30"></img>
               </div>
             </div>
 
+
             <div className="flex items-center justify-center">
-              <h1 className="text-[22rem] font-bold font-jersey text-[#304076] tracking-wider -mt-10 -ml-20">Erin</h1>
+              <h1 className="text-[22rem] font-bold font-jersey text-[#304076] tracking-wider lg:-mt-10 -ml-20 sm:-mt-20">Erin</h1>
             </div>
           </div>
 
-
-
-          <div className="flex justify-between items-center px-8 pb-8 mt-8 gap-x-16 font-newsreader text-[#304076]">
-            <div className="flex gap-4 flex-row -mt-70 ml-60">
+          <div className="flex justify-between items-center px-8 pb-8 mt-8 lg:gap-x-16 sm:gap-x-20 px-15 sm:mt-20 lg:mt-10 font-newsreader text-[#304076]">
+            <div className="flex gap-4 flex-row -mt-70 ">
               <a href = "https://github.com/Er1n-jpg">
               <img src = "/gh.png" className = "h-20"></img>
               </a>
@@ -41,7 +40,7 @@ function App() {
               </a>
             </div>
 
-            <div className="text-right mr-100 -mt-70">
+            <div className="text-right -mt-70 mr-10">
               <h1 className="text-5xl">Student @EOMSS</h1>
               <p className="text-2xl">(Earl of march Secondary School)</p>
             </div>
@@ -51,28 +50,28 @@ function App() {
       </div>
 
       
-      <div className = "w-full flex flex-row items-center justify-between h-100 ">
-      <div className = "w-120 ml-40 text-[#304076]">
-        <h1 className = "font-kapakana text-[13rem] -mb-20 ml-5">Yoohoo</h1>
-          <div className = "font-newsreader text-2xl">
+      <div className = "w-full flex flex-row items-center justify-between h-100 sm:px-15 lg:px-40 gap-10 xl:gap-0">
+      <div className = "w-120 text-[#304076]">
+        <h1 className = "font-kapakana lg:text-[13rem] sm:text-[9rem] lg:-mb-20 sm:-mb-10 ml-5 ">Yoohoo</h1>
+          <div className = "font-newsreader lg:text-2xl sm:text-lg">
             <p>Welcome to my little corner of the internet! (that hasn’t been claimed since im too poor to buy a domain)</p>
             <p className = "mt-2">I’m Erin a 16 year old student from Ottawa, Ontario</p>
             <p className = "mt-2">If i’m not sleeping I like to make projects, do art, build robots and play instruments</p>
           </div>
       </div>
 
-        <div className = "w-150 h-150 mr-30 flex items-center justify-center ">
+        <div className = "w-150 h-150 flex items-center justify-center ">
           <a href="/about">
             <img src="intro.png" className="mt-30 transition-transform duration-300 hover:scale-110"/>
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center w-full mt-50 text-[#304076]">
+      <div className="flex items-center justify-center w-full lg:mt-50 sm:mt-20 text-[#304076]">
         <h1 className="font-kapakana text-8xl">take a look at...</h1>
       </div>
-      <div className = "flex items-center justify-between w-full mt-5 mb-20">
+      <div className = "flex items-center lg:flex-row lg:justify-between mt-5 mb-20 lg:gap-10 xl:gap-30 sm:gap-5 sm:flex-col">
 
-        <a href = "/blog" className = "flex flex-col justify-center items-center ml-50 text-[#304076] transition-transform duration-300 hover:scale-105">
+        <a href = "/blog" className = "flex flex-col justify-center items-center text-[#304076] transition-transform duration-300 hover:scale-105">
           <img src = "/boog.png" className = "w-120 h-90"></img>
           <h1 className = "font-kapakana text-8xl">(B)logs</h1>
           <p className = "font-newsreader text-2xl">My amazing writing skills</p>
@@ -80,16 +79,34 @@ function App() {
 
 
       
-        <a href = "/projects" className = "flex flex-col justify-center items-center mr-50 text-[#304076] transition-transform duration-300 hover:scale-105">
+        <a href = "/projects" className = "flex flex-col justify-center items-center text-[#304076] transition-transform duration-300 hover:scale-105">
           <img src = "/proj.png" className = "w-120 h-90"></img>
           <h1 className = "font-kapakana text-8xl">Projects</h1>
           <p className = "font-newsreader text-2xl">My creations :)</p>
         </a>
       </div>
 
-      <div className = "flex text-center justify-center font-newsreader text-[#304076] mb-10 text-xl">
+      <div className = "flex items-center justify-center">
+        <div className = "w-[80rem] bg-[#304076] flex flex-col items-start py-10 px-10 text-[#F8ECDC] rounded-xl">
+          <div className = "flex flex-row justify-between items-center gap-[37rem]">
+          <h1 className = "font-kapakana text-8xl">Message me!</h1>
+          <p className = "text-2xl font-newsreader">Leave a message for me!</p>
+          </div>
+
+          <div className = "flex flex-row mt-10 mb-5">
+          <textarea
+            className = "w-[60rem] h-20 bg-[#F8ECDC] rounded-lg mr-5 text-[#304076] text-4xl font-newsreader justify-center py-5 px-5"
+            placeholder='Yap here!'
+          />
+          <button className = "w-[14rem] h-20 bg-[#F8ECDC] rounded-lg"></button>
+          </div>
+        </div>
+      </div>
+
+      <div className = "flex text-center justify-center font-newsreader text-[#304076] mb-10 mt-10 text-xl">
         <p>Made with ♡ by yours truly</p>
       </div>
+
     </div>
   </div>
     </>
@@ -97,3 +114,4 @@ function App() {
 }
 
 export default App
+
