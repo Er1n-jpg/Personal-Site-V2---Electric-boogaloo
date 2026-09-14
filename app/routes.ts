@@ -7,4 +7,5 @@ export default [
     route("projects", "routes/projects.tsx"),
     route("unavailable", "routes/unavailable.tsx"),
     route("*", "routes/404.tsx"),
+    route("photo", "routes/snaps.tsx")
 ] satisfies RouteConfig;

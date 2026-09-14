@@ -39,7 +39,7 @@ function DisplayItem({title, description, url, index}: {
 }) {
   return(
     <a href={url}>
-<div className="bg-[#304076] rounded-2xl flex flex-col text-left items-start justify-start p-6 h-90 overflow-hidden w-160 pt-10 hover:scale-105 duration-300">
+<div className="bg-[#304076] rounded-2xl flex flex-col text-left items-start justify-start p-6 h-90 overflow-hidden lg:w-160 pt-10 hover:scale-105 duration-300">
   <p className="font-newsreader text-5xl text-[#F8ECDC] break-words">{title}</p>
   <p className="font-newsreader text-2xl text-white mt-2">{description}</p>
 </div>
@@ -70,7 +70,7 @@ function App() {
       </div>
     </div>
 
-<div className="grid grid-cols-2 gap-6 mt-20 mx-auto mb-30">
+<div className="sm:flex sm:flex-col sm:gap-4 lg:grid grid-cols-2 gap-6 mt-20 mx-auto mb-30 sm:px-10">
   {blogPost.map((item) => (
     <DisplayItem
       key={item.index}

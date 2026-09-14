@@ -71,15 +71,15 @@ function ProjectItem({ title, description, ghurl, demourl, date, img, index }: {
   index: string
 }) {
   return (
-    <div className="relative bg-[#304076] w-340 flex flex-row h-80 items-center justify-center rounded-2xl hover:scale-102 duration-300">
+    <div className="relative bg-[#304076] lg:w-340 sm:w-240 flex flex-row lg:h-80 sm:h-90 items-center justify-center rounded-2xl hover:scale-102 duration-300">
       <a href={demourl} className="absolute inset-0 z-0" aria-label={title}></a>
 
       <img src={img} className="rounded-lg h-62 w-100 relative z-10 pointer-events-none mr-5" />
 
-      <div className="flex text-left font-newsreader text-[#F8ECDC] relative z-10 justify-between gap-40 self-start pt-12">
-        <div className="flex flex-col gap-2 w-150 justify-start ">
+      <div className="flex text-left font-newsreader text-[#F8ECDC] relative z-10 lg:justify-between sm:justify-start lg:gap-40 self-start pt-12">
+        <div className="flex flex-col gap-2 lg:w-150 sm:w-100 justify-start ">
           <h1 className="text-6xl">{title}</h1>
-          <p className="text-lg">{description}</p>
+          <p className="text-lg ">{description}</p>
         </div>
 
         <a href={ghurl} className="relative z-20 hover:scale-115 duration-300" onClick={(e) => e.stopPropagation()}>
@@ -97,16 +97,16 @@ function App() {
   return (
     <>
       <div className="bg-[#F8ECDC] w-full flex flex-col top-0">
-        <div className="items-center">
+        <div className="items-center justify-center">
           <div className="flex flex-col justify-start text-left text-[#304076]">
-            <div className="flex flex-row gap-6 mt-20 ml-10">
+            <div className="flex flex-row gap-6  ml-10">
               <p className="font-kapakana text-[14rem] "> Projects</p>
               <img src="/projline.png" className="h-0.5 w-80 mt-40"></img>
             </div>
             <div className="w-100 -mt-30 ml-70">
-              <p className="font-newsreader text-xl "> Disappointment or not, I love making (and breaking) things!</p>
+              <p className="font-newsreader text-xl"> Disappointment or not, I love making (and breaking) things!</p>
             </div>
-            <div className="flex flex-col gap-6 mt-20 mb-30 items-start ml-20">
+            <div className="flex flex-col gap-6 mt-20 mb-30 items-center">
               {projArray.map((item) => (
                 <ProjectItem
                   key={item.index}

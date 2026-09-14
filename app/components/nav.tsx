@@ -41,8 +41,8 @@ export default function Nav() {
 
   return (
     <nav className="absolute top-0 left-0 w-full bg-transparent z-50 px-8 py-4">
-      <div className="flex items-center justify-end max-w-6xl mx-auto text-3xl">
-        <div className="flex gap-30">
+      <div className="flex items-center justify-end max-w-6xl mx-auto lg:text-3xl sm:text-4xl">
+        <div className="flex lg:gap-30 sm:gap-20">
           <button onClick={toggleMusic} className="text-[#304076] hover:text-[#9DAFE9] transition-colors font-jersey">
             {isPlaying ? "Pause" : "Play"}
           </button>
@@ -56,6 +56,17 @@ export default function Nav() {
           >
             Projects
           </NavLink>
+
+         <NavLink
+            to="/snaps"
+            className={({ isActive }) =>
+              `text-[#304076] hover:text-[#9DAFE9] transition-colors font-jersey ${isActive ? "text-[#9DAFE9]" : ""
+              }`
+            }
+          >
+            Snaps
+          </NavLink>
+
 
           <NavLink
             to="/about"
@@ -80,12 +91,13 @@ export default function Nav() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `text-[#304076] transition-colors font-jersey ${isActive ? "text-[#9DAFE9]" : ""
+              `text-[#304076] transition-colors hover:text-[#9DAFE9] font-jersey ${isActive ? "text-[#9DAFE9]" : ""
               }`
             }
           >
             !!!
           </NavLink>
+
         </div>
       </div>
     </nav>

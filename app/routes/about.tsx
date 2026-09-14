@@ -37,8 +37,8 @@ function App() {
   </div>
 
   <div className = "flex flex-row justify-between text-[#304076] mt-20 items-center">
-    <div className = "flex flex-col items-start justify-start ml-20 w-170">
-      <p className = "font-kapakana text-[12rem]">Fun Facts</p>
+    <div className = "flex flex-col items-start justify-start lg:ml-20 sm:ml-10 w-170">
+      <p className = "font-kapakana sm:text-[8rem] lg:text-[12rem] sm:mb-10 sm:w-100">Fun Facts</p>
       <p className = "font-newsreader text-3xl -mt-20">
         Fun facts about me!
       </p>
@@ -53,7 +53,7 @@ function App() {
 
     </div>
     
-    <img src = "/polaroidlove.png" className = "w-120 h-160 mr-25 mt-20"/>
+    <img src = "/polaroidlove.png" className = "w-120 h-160 lg:mr-25 sm:ml-10 mt-20"/>
 
 
 
