@@ -54,7 +54,6 @@ Updated: This is still a pretty simple section HOWEVER, I did add mobile optimiz
 Going to the projects section:
 ![projects](image.png)
 
-it's mostly just a bunch of vertically stacked divs that redirect you to my various projects, clicking the gener
+it's mostly just a bunch of vertically stacked divs that redirect you to my various projects, clicking the general div will redirect you to the live demo of the project, while the github icon will redirect you to the project's github repository
 
-
-
+Right now there's not that many projects but trust me there will be in the future i'm just too lazy to add them lol

@@ -90,17 +90,6 @@ export default function Nav() {
             Projects
           </NavLink>
 
-         <NavLink
-            to="/snaps"
-            className={({ isActive }) =>
-              `text-[#304076] hover:text-[#9DAFE9] transition-colors font-jersey ${isActive ? "text-[#9DAFE9]" : ""
-              }`
-            }
-          >
-            Snaps
-          </NavLink>
-
-
           <NavLink
             to="/about"
             className={({ isActive }) =>
