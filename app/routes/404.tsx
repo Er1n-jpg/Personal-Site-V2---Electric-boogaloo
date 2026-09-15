@@ -17,7 +17,6 @@ export default function NotFound() {
   }
 }, [])
 
-
   return (
     <>
       <div className="bg-[#F8ECDC] w-full flex flex-col top-0">

@@ -20,7 +20,7 @@ const projArray = [
     index: "2",
   }, {
     title: "Mush-Root",
-    description: "A Database of past tests where people can view and upload them, gamei-fying it for people with ADHD to make it simmilar to youtube with features like merge games, pomodoro timers, a mini subway surfers sreen and line following by mouse",
+    description: "A Database of past tests where people can view and upload them, game-ifying it for people with ADHD to make it similar to youtube with features like merge games, pomodoro timers, a mini subway surfers screen and line following using your mouse!",
     ghurl: "https://github.com/sophiayduan/mushroot",
     demourl: "https://github.com/sophiayduan/mushroot",
     date: "2026-5-15",
@@ -72,7 +72,7 @@ function ProjectItem({ title, description, ghurl, demourl, date, img, index }: {
 }) {
   return (
     <div className="relative bg-[#304076] lg:w-340 sm:w-240 flex flex-row lg:h-80 sm:h-90 items-center justify-center rounded-2xl hover:scale-102 duration-300">
-      <a href={demourl} className="absolute inset-0 z-0" aria-label={title}></a>
+      <a href={demourl} className="absolute inset-0 z-5" aria-label={title}></a>
 
       <img src={img} className="rounded-lg h-62 w-100 relative z-10 pointer-events-none mr-5" />
 
@@ -82,7 +82,7 @@ function ProjectItem({ title, description, ghurl, demourl, date, img, index }: {
           <p className="text-lg ">{description}</p>
         </div>
 
-        <a href={ghurl} className="relative z-20 hover:scale-115 duration-300" onClick={(e) => e.stopPropagation()}>
+        <a href={ghurl} className="relative z-70 hover:scale-115 duration-300" onClick={(e) => e.stopPropagation()}>
           <img className="h-20 w-20" src="./minigh.png" />
         </a>
       </div>

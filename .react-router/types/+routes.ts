@@ -31,7 +31,7 @@ type Pages = {
       "*": string;
     };
   };
-  "/photo": {
+  "/snaps": {
     params: {};
   };
 };
@@ -39,7 +39,7 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/blog" | "/about" | "/projects" | "/unavailable" | "/*" | "/photo";
+    page: "/" | "/blog" | "/about" | "/projects" | "/unavailable" | "/*" | "/snaps";
   };
   "routes/home.tsx": {
     id: "routes/home";
@@ -67,7 +67,7 @@ type RouteFiles = {
   };
   "routes/snaps.tsx": {
     id: "routes/snaps";
-    page: "/photo";
+    page: "/snaps";
   };
 };
 

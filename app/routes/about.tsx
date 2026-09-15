@@ -26,19 +26,62 @@ function App() {
       </p>
     </div>
 
-    <div className="grid grid-cols-3 gap-6 p-8">
-      <div className="bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105"></div>
-      <div className="bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105"></div>
-      <div className="bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105"></div>
-      <div className="bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105"></div>
-      <div className="bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105"></div>
-      <div className="bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105"></div>
+    <div className="grid grid-cols-3 gap-6 p-8 font-jersey text-[#F8ECDC] text-6xl">
+    <div className="relative group overflow-hidden bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105 flex flex-col text-center justify-center">
+      <img 
+      src="/frc.JPEG"
+      className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+      <div className="absolute inset-0 bg-[#304076]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <h1 className="relative z-10">Frc</h1>
+      <p className="relative z-10 text-xl font-newsreader">ooooooh build robot cool mm yummy gearjam</p>
+    </div>
+
+    <div className="relative group overflow-hidden bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105 flex flex-col text-center justify-center">
+      <img 
+      src="/flagship.JPG"
+      className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+       <div className="absolute inset-0 bg-[#304076]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <h1 className = "relative z-10">Hack Club</h1>
+        <p className = "text-xl relative z-10 font-newsreader">the real reason I made this website</p>
+      </div>
+
+      <div className="relative group overflow-hidden bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105 flex flex-col text-center justify-center">
+      <img
+        src = "/band.JPG"
+        className = "absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+        <div className="absolute inset-0 bg-[#304076]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <h1 className = "relative z-10">Band</h1>
+        <p className = "text-xl relative z-10 font-newsreader">I play an instrument that's almost as tall as me</p>
+      </div>
+
+      <div className="relative group overflow-hidden bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105 flex flex-col text-center justify-center">
+        <img
+        src = "/beaches.png"
+        className = "absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:scale-105 flex flex-col text-center justify-center "/>
+        <div className = "absolute inset-0 bg-[#304076]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <h1 className = "relative z-10 ">Art</h1>
+        <p className = "text-xl relative z-10 font-newsreader">Been drawing for 8 years but im still buns </p>
+      </div>
+
+      <div className="bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105 flex flex-col text-center justify-center">
+        <h1>Photototo</h1>
+        <p className = "text-xl font-newsreader">and sometimes videoeoeoeo</p>
+      </div>
+
+      <div className="relative group overflow-hidden bg-[#304076] rounded-2xl aspect-[4/3] transition-transform duration-300 hover:scale-105 flex flex-col text-center justify-center">
+      <img
+      src = "/gambling.jpg"
+      className = "absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:scale-105 flex flex-col text-center justify-center "/>
+        <div className = "absolute inset-0 bg-[#304076]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <h1 className = "relative z-10">Gambling</h1>
+        <p className = "text-xl font-newsreader relative z-10">99% of gamblers quit before they hit big</p>
+      </div>
     </div>
   </div>
 
   <div className = "flex flex-row justify-between text-[#304076] mt-20 items-center">
     <div className = "flex flex-col items-start justify-start lg:ml-20 sm:ml-10 w-170">
-      <p className = "font-kapakana sm:text-[8rem] lg:text-[12rem] sm:mb-10 sm:w-100">Fun Facts</p>
+      <p className = "font-kapakana sm:text-[8rem] lg:text-[12rem] sm:mb-10 sm:w-100 lg:w-200">Fun Facts</p>
       <p className = "font-newsreader text-3xl -mt-20">
         Fun facts about me!
       </p>
@@ -54,8 +97,6 @@ function App() {
     </div>
     
     <img src = "/polaroidlove.png" className = "w-120 h-160 lg:mr-25 sm:ml-10 mt-20"/>
-
-
 
   </div>
 
@@ -184,7 +225,6 @@ function App() {
       <p className = "font-jersey text-[#F8ECDC] text-5xl">Blue Lock</p>
       </div>
       </div>
-
 
       </div>
 

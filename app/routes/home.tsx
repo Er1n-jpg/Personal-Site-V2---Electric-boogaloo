@@ -88,7 +88,6 @@ return (
           <div className="w-full h-48 bg-cover bg-center -mt-10 bg-linear-to-b from-transparent from-0% to-[#F8ECDC] to-80% z-10"></div>
         </div>
 
-
         <div className="w-full flex flex-row items-center justify-between h-100 sm:px-8 lg:px-40 gap-10 xl:gap-0">
           <div className="w-120 text-[#304076]">
             <h1 className="font-kapakana lg:text-[13rem] sm:text-[11rem] lg:-mb-20 sm:-mb-10 ml-5 ">Yoohoo</h1>
@@ -112,15 +111,13 @@ return (
 
           <a href="/blog" className="flex flex-col justify-center items-center text-[#304076] transition-transform duration-300 hover:scale-105">
             <img src="/boog.png" className="lg:w-120 lg:h-90 sm:w-180"></img>
-            <h1 className="font-kapakana lg:text-8xl sm:text-[8rem] -mb-5">(B)logs</h1>
-            <p className="font-newsreader text-2xl mb-20">My amazing writing skills</p>
+            <h1 className="font-kapakana lg:text-8xl sm:text-[8rem] sm:-mb-5 lg:mb-0">(B)logs</h1>
+            <p className="font-newsreader text-2xl sm:mb-20 lg:mb-0">My amazing writing skills</p>
           </a>
-
-
 
           <a href="/projects" className="flex flex-col justify-center items-center text-[#304076] transition-transform duration-300 hover:scale-105">
             <img src="/proj.png" className="lg:w-120 lg:h-90 sm:w-180"></img>
-            <h1 className="font-kapakana lg:text-8xl sm:text-[8rem] -mb-5">Projects</h1>
+            <h1 className="font-kapakana lg:text-8xl sm:text-[8rem] sm:-mb-5 lg:mb-0">Projects</h1>
             <p className="font-newsreader text-2xl">My creations :)</p>
           </a>
         </div>
@@ -163,4 +160,3 @@ return (
 }
 
 export default App
-

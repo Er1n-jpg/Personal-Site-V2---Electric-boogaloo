@@ -18,7 +18,7 @@ const blogPost = [
     index: "2"
   },
   {
-    title: "what is the secret to live",
+    title: "what is the secret to life",
     description: "uhhh I got no clue about this one",
     url: "./unavailablee.tsx",
     index: "3"
